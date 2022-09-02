@@ -33,6 +33,15 @@ class DatabaseSeeder extends Seeder
             ExampleSeeder::class,
             BREADSeeder::class,
             EmailSeeder::class,
+            CivilStatusSeeder::class,
+            GenderSeeder::class,
+            MemberTypeSeeder::class,
+            NationalitySeeder::class,
+            ReligionSeeder::class,
+            RequestDescriptionSeeder::class,
+            RequestStatusSeeder::class,
+            RequestTypeSeeder::class,
+            SuffixSeeder::class,
         ]);
     }
 }

@@ -1,6 +1,5 @@
 <?php
 Route::group(['middleware' => ['role:admin']], function () {
-
     Route::resource('bread',  'BreadController');   //create BREAD (resource)
     Route::resource('users',        'UsersController')->except( ['create', 'store'] );
     Route::resource('roles',        'RolesController');

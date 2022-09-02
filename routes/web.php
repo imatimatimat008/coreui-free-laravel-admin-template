@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Parameters\ChapterAffiliateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +23,7 @@ Route::middleware('auth')->group(function () {
 
         Route::get('dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 
+        Route::resource('chapter_affiliates', \App\Http\Controllers\Parameters\ChapterAffiliateController::class);
 
         require __DIR__.'/user.php';
         require __DIR__.'/resource.php';
